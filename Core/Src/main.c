@@ -275,14 +275,14 @@ static void MX_GPIO_Init(void)
 void ledBlinkTask(void const * argument)
 {
   /* USER CODE BEGIN 5 */
-
+  traceString myChannel = xTraceRegisterString("UART2");
   /* Infinite loop */
   for(;;)
   {
+	  vTracePrint(myChannel, "Start UART TRANSMIT");
 	  PRINTF("Coucou\r\n");
 	  HAL_GPIO_TogglePin(LD2_GPIO_Port, LD2_Pin);
-	  osDelay(500);
-	  count++;
+	  osDelay(50);
   }
   /* USER CODE END 5 */
 }
