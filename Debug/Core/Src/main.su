@@ -1,0 +1,8 @@
+main.c:65:6:VirtualCOM_Transmit	144	static
+main.c:84:5:main	48	static
+main.c:157:6:SystemClock_Config	88	static
+main.c:203:13:MX_USART2_UART_Init	8	static
+main.c:236:13:MX_GPIO_Init	48	static
+main.c:275:6:ledBlinkTask	16	static
+main.c:302:6:HAL_TIM_PeriodElapsedCallback	16	static
+main.c:319:6:Error_Handler	4	static
